@@ -7,7 +7,7 @@ def fact(n):
     r=0
     if n == 0:
         r=1
-    elif n < 0:
+    elif n > 0:
         while m <= n:
             r *= m
             m += 1
