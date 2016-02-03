@@ -4,15 +4,13 @@
 
 def fact(n):
     m=1
-    r=0
+    r=1
     if n < 0:
-        r = ValueError
-    elif n > 0:
+        raise ValueError('Err')
+    else:
         while m <= n:
             r *= m
             m += 1
-    elif n == 1
-        r = 1
     return r
 
 def roots(a, b, c):
