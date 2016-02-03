@@ -3,11 +3,11 @@
 # Version: February 2, 2016
 
 def fact(n):
-    m=1
-    r=0
     if n < 0:
         raise ValueError
     elif n > 0:
+        m=1
+        r=0
         while m <= n:
             r *= m
             m += 1
