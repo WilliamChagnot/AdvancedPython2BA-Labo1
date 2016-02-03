@@ -7,9 +7,9 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        with self.assertRaises(ValueError):
-            utils.fact(-1)
-        pass
+        self.assertRaises(ValueError, utils.fact, -1)
+        self.assertEqual(utils.fact(0), 1)
+        self.assertEqual(utils.fact(5), 120)
     
     def test_roots(self):
         
